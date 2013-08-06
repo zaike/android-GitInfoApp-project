@@ -21,7 +21,7 @@ import com.zako.dialog.CustomProgressDialog;
 
 /**
  * ˆê——‰æ–Ê
- * @author zaike
+ * @author zaikea
  */
 public class ListActivity extends Activity implements Handler.Callback {
 
