@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GitInfoApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="detail_label_id">ID</string>
+    <string name="detail_label_title">TITLE</string>
+    <string name="detail_label_detail">DETAIL</string>
+    <string name="detail_label_create">作成日時</string>
+    <string name="detail_label_update">更新日時</string>
+    <string name="detail_button_back">戻る</string>
+    <string name="detail_button_edit">編集</string>
+    <string name="detail_button_delete">削除</string>
+
+</resources>
