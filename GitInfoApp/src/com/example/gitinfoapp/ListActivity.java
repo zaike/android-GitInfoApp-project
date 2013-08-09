@@ -23,7 +23,7 @@ import com.zako.dialog.CustomProgressDialog;
  * ˆê——‰æ–Ê
  * @author zaikea
  */
-public class ListActivity extends Activity implements Handler.Callback {
+public class LisActivity extends Activity implements Handler.Callback {
 
 	private ListView listView;
 
