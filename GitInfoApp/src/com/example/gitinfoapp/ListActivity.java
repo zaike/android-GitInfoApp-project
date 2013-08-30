@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.gitinfoapp.adapter.InfoListAdapter;
@@ -24,6 +25,8 @@ import com.zako.dialog.CustomProgressDialog;
  * @author zaikea
  */
 public class ListActivity extends Activity implements Handler.Callback {
+
+	private Button button;
 
 	private ListView listView;
 
@@ -61,6 +64,7 @@ public class ListActivity extends Activity implements Handler.Callback {
 	 * 画面パーツ初期化
 	 */
 	protected void findViews() {
+		button = (Button) findViewById(R.id.button1);
 		listView = (ListView) findViewById(R.id.listView1);
 	}
 
@@ -68,6 +72,18 @@ public class ListActivity extends Activity implements Handler.Callback {
 	 * 画面パーツイベントリスナー登録
 	 */
 	protected void setListener() {
+		this.button.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = null;
+
+				// 選択された行のデータを取得する。
+				intent = new Intent(ListActivity.this, HogeActivity.class);
+				startActivity(intent);
+			}
+		});
+		
 		this.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 				@Override
 				public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
